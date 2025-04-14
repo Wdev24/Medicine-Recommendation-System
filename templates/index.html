@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medicine Recommendation System</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🩺 Medicine Recommendation System</h1>
+
+    <form id="symptom-form">
+      <label for="symptoms">Enter Symptoms (comma separated):</label>
+      <input type="text" id="symptoms" placeholder="e.g., fever, cough, fatigue" required>
+      <button type="submit">Get Recommendation</button>
+    </form>
+
+    <div class="result" id="result" style="display:none;">
+      <h2>Prediction Result</h2>
+      <p><strong>Disease:</strong> <span id="disease"></span></p>
+      <p><strong>Recommended Medicine:</strong> <span id="medicine"></span></p>
+      <p><strong>Alternatives:</strong> <span id="alternatives"></span></p>
+      <p><strong>Side Effects:</strong> <span id="sideEffects"></span></p>
+      <p><strong>Dosage:</strong> <span id="dosage"></span></p>
+      <p><strong>Precautions:</strong> <span id="precautions"></span></p>
+    </div>
+  </div>
+
+  <script src="static/script.js"></script>
+</body>
+</html>
